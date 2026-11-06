@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Jorge Sierra Suárez — diseño y desarrollo web con enfoque minimalista y accesible." />
+  <title>Jorge Sierra Suárez · Portafolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#inicio" class="brand">Alex&nbsp;Styles</a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#sobre-mi" class="menu__link">Sobre mí</a>
+        <a href="#trabajos" class="menu__link">Trabajos</a>
+        <a href="#servicios" class="menu__link">Servicios</a>
+        <a href="#contacto" class="menu__link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero__text">
+        <span class="hero__tag">Disponible para proyectos</span>
+        <h1 class="hero__heading">
+          Diseño claro.<br />
+          Código limpio.<br />
+          Resultados reales.
+        </h1>
+        <p class="hero__sub">
+          Soy Jorge Iván Sierra Suárez, diseñador y desarrollador front-end. Ayudo a marcas
+          a construir interfaces honestas y funcionales.
+        </p>
+        <div class="hero__cta">
+          <a href="#trabajos" class="button button--solid">Explorar trabajos</a>
+          <a href="#contacto" class="button button--outline">Hablemos</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card">
+          <img src="https://avatars.githubusercontent.com/u/10810296?v=4?w=500&q=80"
+               alt="Retrato de Jorge Sierra Suárez" class="hero__photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="block">
+      <h2 class="block__title">Sobre mí</h2>
+      <div class="block__grid">
+        <p>
+          Con más de seis años en el sector, combino pensamiento de diseño y
+          desarrollo front-end para crear productos digitales que se sienten
+          naturales. Trabajo con equipos de producto, marketing y accesibilidad.
+        </p>
+        <p>
+          Creo en el minimalismo funcional: menos adornos, más claridad. Cada
+          píxel debe justificar su presencia.
+        </p>
+      </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section id="trabajos" class="block block--alt">
+      <h2 class="block__title">Trabajos seleccionados</h2>
+      <div class="works">
+        <article class="work" data-modal="work-1">
+          <div class="work__preview work__preview--a"></div>
+          <div class="work__meta">
+            <h3 class="work__name">Nova Banking</h3>
+            <span class="work__cat">Fintech · 2024</span>
+          </div>
+          <button class="work__more" type="button">Ver caso →</button>
+        </article>
+
+        <article class="work" data-modal="work-2">
+          <div class="work__preview work__preview--b"></div>
+          <div class="work__meta">
+            <h3 class="work__name">Orbit CMS</h3>
+            <span class="work__cat">SaaS · 2023</span>
+          </div>
+          <button class="work__more" type="button">Ver caso →</button>
+        </article>
+
+        <article class="work" data-modal="work-3">
+          <div class="work__preview work__preview--c"></div>
+          <div class="work__meta">
+            <h3 class="work__name">Pulse Fit</h3>
+            <span class="work__cat">Landing · 2024</span>
+          </div>
+          <button class="work__more" type="button">Ver caso →</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICIOS / SKILLS -->
+    <section id="servicios" class="block">
+      <h2 class="block__title">Qué hago</h2>
+      <ul class="services">
+        <li class="services__item" data-tooltip="Diseño de interfaces centradas en el usuario">
+          <strong>UI/UX Design</strong>
+          <span>Wireframes, prototipos y sistemas de diseño.</span>
+        </li>
+        <li class="services__item" data-tooltip="HTML semántico, CSS moderno y JS">
+          <strong>Front-End</strong>
+          <span>Interfaces responsivas, rápidas y accesibles.</span>
+        </li>
+        <li class="services__item" data-tooltip="Auditorías de usabilidad y performance">
+          <strong>Optimización</strong>
+          <span>Rendimiento, SEO y accesibilidad WCAG.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="block block--alt block--center">
+      <h2 class="block__title">¿Construimos algo juntos?</h2>
+      <p class="block__lead">Escríbeme y conversemos sobre tu próximo proyecto.</p>
+      <a href="mailto:alex@example.com" class="button button--solid">Jorge@example.com</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jorge Sierra Suárez. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- MODALES -->
+  <div class="modal" id="work-1" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" data-dismiss></div>
+    <div class="modal__panel">
+      <button class="modal__x" data-dismiss aria-label="Cerrar">&times;</button>
+      <h3>Nova Banking</h3>
+      <p>Rediseño completo de la app de banca móvil. Se optimizó la navegación
+         y se creó un sistema de diseño de 40+ componentes accesibles.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="work-2" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" data-dismiss></div>
+    <div class="modal__panel">
+      <button class="modal__x" data-dismiss aria-label="Cerrar">&times;</button>
+      <h3>Orbit CMS</h3>
+      <p>Panel de administración modular con editor de bloques y gestión de roles.
+         Stack: Node, Express, CSS Grid.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="work-3" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" data-dismiss></div>
+    <div class="modal__panel">
+      <button class="modal__x" data-dismiss aria-label="Cerrar">&times;</button>
+      <h3>Pulse Fit</h3>
+      <p>Landing page para estudio de fitness, con contadores animados, formulario
+         de suscripción y diseño 100% responsive.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
